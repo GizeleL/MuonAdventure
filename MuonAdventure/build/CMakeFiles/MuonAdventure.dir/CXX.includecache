@@ -96,7 +96,7 @@ G4UserSteppingAction.hh
 globals.hh
 ../include/globals.hh
 
-/home/ubuntu20/geant4-v11.1.3/work/MuonAdventure/TestEm17.cc
+/home/ubuntu20/geant4-v11.1.3/work/MuonAdventure/MuonAdventure.cc
 G4RunManager.hh
 /home/ubuntu20/geant4-v11.1.3/work/MuonAdventure/G4RunManager.hh
 G4SteppingVerbose.hh

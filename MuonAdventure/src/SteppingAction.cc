@@ -37,7 +37,6 @@
 #include "G4ParticleTable.hh"
 #include "HistoManager.hh"
 #include "RunAction.hh"
-
 #include "G4RunManager.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

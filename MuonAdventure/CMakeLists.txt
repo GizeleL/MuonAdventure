@@ -1,7 +1,7 @@
 #----------------------------------------------------------------------------
 # Setup the project
 cmake_minimum_required(VERSION 3.16...3.21)
-project(TestEm17)
+project(MuonAdventure)
 
 #----------------------------------------------------------------------------
 # Find Geant4 package, activating all available UI and Vis drivers by default
@@ -31,19 +31,19 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(TestEm17 TestEm17.cc ${sources} ${headers})
-target_link_libraries(TestEm17 ${Geant4_LIBRARIES} )
+add_executable(MuonAdventure MuonAdventure.cc ${sources} ${headers})
+target_link_libraries(MuonAdventure ${Geant4_LIBRARIES} )
 
 #----------------------------------------------------------------------------
 # Copy all scripts to the build directory, i.e. the directory in which we
-# build TestEm17. This is so that we can run the executable directly because it
+# build MuonAdventure. This is so that we can run the executable directly because it
 # relies on these scripts being in the current working directory.
 #
-set(TestEm17_SCRIPTS
-    allproc.mac brem.mac ioni.mac munucl.mac pair.mac TestEm17.in TestEm17.out vis.mac
+set(MuonAdventure_SCRIPTS
+    allproc.mac brem.mac ioni.mac munucl.mac pair.mac MuonAdventure.in MuonAdventure.out vis.mac
   )
 
-foreach(_script ${TestEm17_SCRIPTS})
+foreach(_script ${MuonAdventure_SCRIPTS})
   configure_file(
     ${PROJECT_SOURCE_DIR}/${_script}
     ${PROJECT_BINARY_DIR}/${_script}
@@ -54,5 +54,5 @@ endforeach()
 #----------------------------------------------------------------------------
 # Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
 #
-install(TARGETS TestEm17 DESTINATION bin)
+install(TARGETS MuonAdventure DESTINATION bin)
 

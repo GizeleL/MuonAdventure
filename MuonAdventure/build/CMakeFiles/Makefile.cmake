@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../TestEm17.in"
-  "../TestEm17.out"
+  "../MuonAdventure.in"
+  "../MuonAdventure.out"
   "../allproc.mac"
   "../brem.mac"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
@@ -200,13 +200,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ioni.mac"
   "munucl.mac"
   "pair.mac"
-  "TestEm17.in"
-  "TestEm17.out"
+  "MuonAdventure.in"
+  "MuonAdventure.out"
   "vis.mac"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/TestEm17.dir/DependInfo.cmake"
+  "CMakeFiles/MuonAdventure.dir/DependInfo.cmake"
   )
